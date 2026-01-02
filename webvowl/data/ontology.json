@@ -1,0 +1,1580 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2003/01/geo/wgs84_pos", "http://www.w3.org/2001/XMLSchema", "http://www.w3.org/ns/sosa", "http://purl.oclc.org/NET/UNIS/fiware/iot-lite", "http://purl.org/iot/ontology/iot-stream", "https://w3id.org/iot/qoi", "http://purl.oclc.org/NET/ssnx/qu/qu", "http://www.opengis.net/ont/geosparql" ],
+    "iri" : "http://purl.org/iot/ontology/iot-stream#",
+    "version" : "1.0",
+    "author" : [ "Shirin Enshaeifar", "Maria Bermudez-Edo", "Sahr Thomas Acton", "Payam Barnaghi", "Tarek Elsaleh" ],
+    "description" : {
+      "en" : "IoT-Stream is a lightweight extension of SOSA ontology to annotate Stream Data on the Internet of Things (IoT) context. It allows to annotate each data value in the stream or just the metadata of the stream and the location of the data."
+    },
+    "labels" : {
+      "en" : "IoT-Stream"
+    },
+    "other" : {
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Shirin Enshaeifar",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Tarek Elsaleh",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Payam Barnaghi",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Sahr Thomas Acton",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "en",
+        "value" : "Maria Bermudez-Edo",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "en",
+        "value" : "Roonak Rezvani",
+        "type" : "label"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "en",
+        "value" : "Creative Commons Attribution 4.0 International",
+        "type" : "label"
+      } ],
+      "Title" : [ {
+        "identifier" : "Title",
+        "language" : "en",
+        "value" : "IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "en",
+        "value" : "http://purl.org/iot/ontology/iot-stream#",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "en",
+        "value" : "2019-12-01",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "en",
+        "value" : "iot-stream",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "en",
+        "value" : "2018-10-01",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "en",
+        "value" : "1.0",
+        "type" : "label"
+      } ],
+      "abstract" : [ {
+        "identifier" : "abstract",
+        "language" : "en",
+        "value" : "In recent years, the development and deployment of Internet of Things (IoT) devices has led to generation of large volumes of real world data. Analytical models can be used to extract meaningful insights from this data. However, most of IoT data is not fully utilised mainly due to interoperability issues and the difficulties to analyse data collected by heterogeneous resources. To overcome this heterogeneity, semantic technologies are sued to create common models to share various data originated from heterogeneous sources. However, semantics add further overhead to the data communication and the processing time to annotate the data with the model can increase the latency and complexity in publishing and querying the annotated data. We present a lightweight semantic model to annotate IoT streams. The metadata descriptions that are provided in the models are used for search and discovery of the data using various attributes such as value and type. The proposed model extends the commonly used ontologies such as W3C/OGC SSN ontology and its recent lightweight core, SOSA, and includes concepts to describe streaming IoT data. We also show use cases, tools and applications where the proposed model has been used.",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "T. Elsaleh, M. Bermudez-Edo, S. Enshaeifar, S. T. Acton, R. Rezvani and P. Barnaghi, \"IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams,\" 2019 Global IoT Summit (GIoTS), Aarhus, Denmark, 2019, pp. 1-6",
+        "type" : "label"
+      }, {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "10.1109/GIOTS.2019.8766367",
+        "type" : "label"
+      } ],
+      "Date" : [ {
+        "identifier" : "Date",
+        "language" : "en",
+        "value" : "2019-12-01",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "en",
+        "value" : "Draft",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "29",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "33",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "20",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "18",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "11",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "53",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/iot/qoi#Plausibility",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Plausibility",
+      "en" : "Plausibility"
+    },
+    "comment" : {
+      "en" : "Defines if data provided by a data sources makes sense regarding all the probabilistic knowledge about the data source. E.g. for a temperature sensore the temperature is within a certain value range."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#Quality",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Quality",
+      "undefined" : "Quality"
+    },
+    "subClasses" : [ "1", "6", "7", "8", "9" ],
+    "comment" : {
+      "undefined" : "Top class for quality describing classes for IoT data sources."
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#Timeliness",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Timeliness",
+      "en" : "Timeliness"
+    },
+    "subClasses" : [ "12", "13" ],
+    "comment" : {
+      "en" : "Timliness defines a category with metrics, which rate if a data source provides data within a defined timespan or of a defined age."
+    },
+    "attributes" : [ "external" ],
+    "id" : "8",
+    "superClasses" : [ "2" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "23", "24" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Observation",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Observation",
+      "en" : "Observation"
+    },
+    "subClasses" : [ "26" ],
+    "comment" : {
+      "en" : "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+    },
+    "attributes" : [ "external" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "27",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "29",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "21",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "31",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "32",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "26", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "33"
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "26", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "20"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "35",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#dateTime",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "dateTime"
+    }
+  }, {
+    "iri" : "http://www.opengis.net/ont/geosparql#Coverage",
+    "baseIri" : "http://www.opengis.net/ont/geosparql",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coverage",
+      "undefined" : "Coverage"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#Age",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Age",
+      "en" : "Age"
+    },
+    "comment" : {
+      "en" : "Defines the age of provided information."
+    },
+    "attributes" : [ "external" ],
+    "id" : "12",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#Analytics",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The data analytics that has been applied to the IoT data stream.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Analytics",
+      "undefined" : "Analytics"
+    },
+    "comment" : {
+      "en" : "The data analytics that has been applied to the IoT data stream."
+    },
+    "id" : "17"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/ssnx/qu/qu#Unit",
+    "baseIri" : "http://purl.oclc.org/NET/ssnx/qu/qu",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.oclc.org/NET/ssnx/qu",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "skos:exactMatch 'Unit' [SysML 1.2-QUDV] http://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.omgsysml.org/qudv#Unit",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Unit",
+      "undefined" : "Unit"
+    },
+    "comment" : {
+      "undefined" : "A Unit is an abstract classifier that represents the [VIM] concept of \"measurement unit\" that is defined as \"real scalar quantity,\ndefined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the\ntwo quantities as a number.\""
+    },
+    "attributes" : [ "external" ],
+    "id" : "42"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "18",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "48",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "11",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#Event",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The event that has been detected from an IoT data steam, and generated by an analytics process",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "comment" : {
+      "en" : "The event that has been detected from an IoT data steam, and generated by an analytics process"
+    },
+    "id" : "34"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "50",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "17", "37" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "52"
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "34" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "53"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#Concordance",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Concordance",
+      "en" : "Concordance"
+    },
+    "comment" : {
+      "en" : "Describes the agreement between information provided by the monitored data source and information provided by other independent data sources providing correlating effects."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#Point",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point",
+      "undefined" : "point"
+    },
+    "comment" : {
+      "undefined" : " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  "
+    },
+    "attributes" : [ "external" ],
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Platform",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Platform",
+      "en" : "Platform"
+    },
+    "comment" : {
+      "en" : "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+    },
+    "attributes" : [ "external" ],
+    "id" : "64"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/Sensor",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Sensor",
+      "en" : "Sensor"
+    },
+    "comment" : {
+      "en" : "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#Frequency",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Frequency",
+      "en" : "Frequency"
+    },
+    "comment" : {
+      "en" : "Defines the frequency in which information is updated."
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "8" ]
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialThing"
+    },
+    "subClasses" : [ "23" ],
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#StreamObservation",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "instances" : 0,
+    "annotations" : {
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "A observation made by a sensor device captured as a data point over a time instant, or as a subset of data points over a defined time interval.",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "StreamObservation",
+      "undefined" : "StreamObservation"
+    },
+    "comment" : {
+      "en" : "A observation made by a sensor device captured as a data point over a time instant, or as a subset of data points over a defined time interval."
+    },
+    "id" : "26",
+    "superClasses" : [ "25" ]
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#IotStream",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "instances" : 0,
+    "description" : {
+      "en" : "An abstraction that represents an IoT data stream that is generated by an IoT source. The IoTStream is the central concept in the ontology, whereby continuous stream observations belong to. It has a lifetime whch is defined by the stream start time and end time."
+    },
+    "label" : {
+      "IRI-based" : "IotStream",
+      "undefined" : "IotStream"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#Artificiality",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Artificiality",
+      "en" : "Artificiality"
+    },
+    "comment" : {
+      "en" : "The degreee of used sensor fusion techniques or definition of a direct measurement from a single data source."
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind",
+    "baseIri" : "http://purl.oclc.org/NET/ssnx/qu/qu",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.oclc.org/NET/ssnx/qu",
+        "type" : "label"
+      } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "skos:exactMatch 'QuantityKind' [SysML 1.2-QUDV] http://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://www.omgsysml.org/qudv#Quantity",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "QuantityKind",
+      "undefined" : "QuantityKind"
+    },
+    "comment" : {
+      "undefined" : "A QuantityKind is an abstract classifier that represents the [VIM] concept of \"kind of quantity\" that is defined as \"aspect\ncommon to mutually comparable quantities.\" A QuantityKind represents the essence of a quantity without any numerical\nvalue or unit. Quantities of the same kind within a given system of quantities have the same quantity dimension. However,\nquantities of the same dimension are not necessarily of the same kind."
+    },
+    "attributes" : [ "external" ],
+    "id" : "38"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service",
+    "baseIri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Service"
+    },
+    "comment" : {
+      "en" : "Service provided by an IoT Device"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#Completeness",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "stable",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Completeness",
+      "en" : "Completeness"
+    },
+    "comment" : {
+      "en" : "The degreee of of completeness of all expected attributes/values within a single provided date value."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "2" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "36",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "41",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "56",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "57",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "58",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "59",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "60",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "61",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "62",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "63",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "67",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "76",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "79",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "80",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "81",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "82",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "85",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "86",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType",
+    "baseIri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "interfaceType"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Defines the type of interface of the service endpoint, e.g. RESTful, NGSI-9, MQTT, CoAP etc."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint",
+    "baseIri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "endpoint"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Endpoint of the service. It is usually a URL where the service is available."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#derivedFrom",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "derivedFrom",
+      "en" : "derived from"
+    },
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#methods",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "methods"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#windowEnd",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "21",
+    "label" : {
+      "IRI-based" : "windowEnd"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "29",
+    "subproperty" : [ "30" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "28"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind",
+    "baseIri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite",
+    "range" : "38",
+    "label" : {
+      "IRI-based" : "hasQuantityKind"
+    },
+    "domain" : "37",
+    "attributes" : [ "object", "external" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://www.w3.org/2003/01/geo/wgs84_pos#location",
+    "baseIri" : "http://www.w3.org/2003/01/geo/wgs84_pos",
+    "range" : "22",
+    "label" : {
+      "IRI-based" : "location",
+      "undefined" : "location"
+    },
+    "domain" : "15",
+    "comment" : {
+      "undefined" : "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n "
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit",
+    "baseIri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasUnit"
+    },
+    "domain" : "37",
+    "attributes" : [ "object", "external" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#paramValues",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "paramValues"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "43"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#madeStreamObservation",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "madeStreamObservation",
+      "en" : "made stream observation"
+    },
+    "domain" : "37",
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#belongsTo",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "belongsTo",
+      "en" : "belongs to"
+    },
+    "domain" : "26",
+    "attributes" : [ "object" ],
+    "id" : "47"
+  }, {
+    "range" : "8",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#generatedBy",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "52",
+    "label" : {
+      "IRI-based" : "generatedBy",
+      "en" : "generated by"
+    },
+    "domain" : "53",
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "range" : "9",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "55"
+  }, {
+    "range" : "1",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "56"
+  }, {
+    "range" : "8",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "57"
+  }, {
+    "range" : "9",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "58"
+  }, {
+    "range" : "1",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "59"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "60"
+  }, {
+    "range" : "1",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "61"
+  }, {
+    "range" : "8",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#providedBy",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "providedBy",
+      "en" : "provided by"
+    },
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "63"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#hasAbsoluteValue",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "range" : "35",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasAbsoluteValue",
+      "en" : "hasAbsoluteValue"
+    },
+    "domain" : "2",
+    "comment" : {
+      "en" : "Defines the absolute value for the measured quality. E.g. 60 for Age (unit is defined with hasUnitOfMeasurement)."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "65"
+  }, {
+    "range" : "13",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "66"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "67"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#label",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "50",
+    "label" : {
+      "IRI-based" : "label"
+    },
+    "domain" : "34",
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#detectedFrom",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "detectedFrom",
+      "en" : "detected from"
+    },
+    "domain" : "34",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/resultTime",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed.",
+        "type" : "label"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "resultTime",
+      "en" : "result time"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/iot/qoi#hasQuality",
+    "baseIri" : "https://w3id.org/iot/qoi",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://w3id.org/iot/qoi",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "en",
+        "value" : "testing",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasQuality",
+      "en" : "hasQuality"
+    },
+    "superproperty" : [ "28" ],
+    "domain" : "26",
+    "comment" : {
+      "en" : "Connects a quality to a data source."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#parameters",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "48",
+    "label" : {
+      "IRI-based" : "parameters"
+    },
+    "domain" : "17",
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#windowStart",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "32",
+    "label" : {
+      "IRI-based" : "windowStart"
+    },
+    "domain" : "33",
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/madeBySensor",
+    "inverse" : "74",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "37",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between an Observation and the Sensor which made the Observation.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeBySensor",
+      "en" : "made by sensor"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "Relation between an Observation and the Sensor which made the Observation."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "73"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/madeObservation",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "25",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "Relation between a Sensor and an Observation made by the Sensor.",
+        "type" : "label"
+      } ],
+      "rangeIncludes" : [ {
+        "identifier" : "rangeIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sensor",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "madeObservation",
+      "en" : "made observation"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Relation between a Sensor and an Observation made by the Sensor."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription",
+    "baseIri" : "http://purl.oclc.org/NET/UNIS/fiware/iot-lite",
+    "range" : "49",
+    "label" : {
+      "IRI-based" : "interfaceDescription"
+    },
+    "domain" : "4",
+    "comment" : {
+      "undefined" : "Interface Description of the service, e.g WADL, WSDL, NGSI9 etc."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "75"
+  }, {
+    "iri" : "http://purl.org/iot/ontology/iot-stream#analysedBy",
+    "baseIri" : "http://purl.org/iot/ontology/iot-stream",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "analysedBy",
+      "en" : "analysed by"
+    },
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topDataProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "topDataProperty"
+    },
+    "domain" : "29",
+    "attributes" : [ "datatype", "external" ],
+    "id" : "77"
+  }, {
+    "range" : "8",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "78"
+  }, {
+    "range" : "8",
+    "domain" : "12",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "79"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "80"
+  }, {
+    "range" : "25",
+    "domain" : "26",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "81"
+  }, {
+    "range" : "2",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://www.w3.org/ns/sosa/hasSimpleResult",
+    "baseIri" : "http://www.w3.org/ns/sosa",
+    "range" : "27",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/",
+        "type" : "iri"
+      } ],
+      "definition" : [ {
+        "identifier" : "definition",
+        "language" : "en",
+        "value" : "The simple value of an Observation or Actuation or act of Sampling.",
+        "type" : "label"
+      } ],
+      "example" : [ {
+        "identifier" : "example",
+        "language" : "en",
+        "value" : "For instance, the values 23 or true.",
+        "type" : "label"
+      } ],
+      "domainIncludes" : [ {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Sampling",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Actuation",
+        "type" : "iri"
+      }, {
+        "identifier" : "domainIncludes",
+        "language" : "undefined",
+        "value" : "http://www.w3.org/ns/sosa/Observation",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasSimpleResult",
+      "en" : "has simple result"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "The simple value of an Observation or Actuation or act of Sampling."
+    },
+    "attributes" : [ "datatype", "external" ],
+    "id" : "83"
+  }, {
+    "range" : "2",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "84"
+  }, {
+    "range" : "2",
+    "domain" : "9",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "85"
+  }, {
+    "range" : "2",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "86"
+  } ]
+}

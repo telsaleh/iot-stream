@@ -1,0 +1,543 @@
+<http://purl.org/iot/ontology/iot-stream#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://purl.org/iot/ontology/iot-stream#> <http://www.w3.org/2002/07/owl#versionIRI> <http://purl.org/iot/ontology/iot-stream/v1.0> .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/Date> "2019-12-01"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/Title> "IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/abstract> "In recent years, the development and deployment of Internet of Things (IoT) devices has led to generation of large volumes of real world data. Analytical models can be used to extract meaningful insights from this data. However, most of IoT data is not fully utilised mainly due to interoperability issues and the difficulties to analyse data collected by heterogeneous resources. To overcome this heterogeneity, semantic technologies are sued to create common models to share various data originated from heterogeneous sources. However, semantics add further overhead to the data communication and the processing time to annotate the data with the model can increase the latency and complexity in publishing and querying the annotated data. We present a lightweight semantic model to annotate IoT streams. The metadata descriptions that are provided in the models are used for search and discovery of the data using various attributes such as value and type. The proposed model extends the commonly used ontologies such as W3C/OGC SSN ontology and its recent lightweight core, SOSA, and includes concepts to describe streaming IoT data. We also show use cases, tools and applications where the proposed model has been used."@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/creator> "Maria Bermudez-Edo"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/creator> "Payam Barnaghi"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/creator> "Sahr Thomas Acton"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/creator> "Shirin Enshaeifar"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/creator> "Tarek Elsaleh"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/description> "IoT-Stream is a lightweight extension of SOSA ontology to annotate Stream Data on the Internet of Things (IoT) context. It allows to annotate each data value in the stream or just the metadata of the stream and the location of the data."@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/terms/bibliographicCitation> "10.1109/GIOTS.2019.8766367"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/dc/terms/bibliographicCitation> "T. Elsaleh, M. Bermudez-Edo, S. Enshaeifar, S. T. Acton, R. Rezvani and P. Barnaghi, \"IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams,\" 2019 Global IoT Summit (GIoTS), Aarhus, Denmark, 2019, pp. 1-6"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/ontology/bibo/status> "Draft"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/vocab/vann#preferredNamespaceUri> "2018-10-01"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/vocab/vann#preferredNamespaceUri> "2019-12-01"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/vocab/vann#preferredNamespaceUri> "http://purl.org/iot/ontology/iot-stream#"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://purl.org/vocab/vann#preferredNamespaceUri> "iot-stream"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://schema.org/contributor> "Roonak Rezvani"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://www.w3.org/2000/01/rdf-schema#label> "IoT-Stream"@en .
+<http://purl.org/iot/ontology/iot-stream#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0"@en .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#altRelative> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#relativeLocation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+# 
+# http://purl.org/dc/elements/1.1/Creator
+<http://purl.org/dc/elements/1.1/Creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/Date
+<http://purl.org/dc/elements/1.1/Date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/Title
+<http://purl.org/dc/elements/1.1/Title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/abstract
+<http://purl.org/dc/elements/1.1/abstract> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/description
+<http://purl.org/dc/elements/1.1/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/rights
+<http://purl.org/dc/elements/1.1/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/iot/ontology/iot-stream#streamEnd
+<http://purl.org/iot/ontology/iot-stream#streamEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/iot/ontology/iot-stream#streamEnd> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://purl.org/iot/ontology/iot-stream#streamEnd> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+# 
+# http://purl.org/iot/ontology/iot-stream#streamStart
+<http://purl.org/iot/ontology/iot-stream#streamStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/iot/ontology/iot-stream#streamStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTimeStamp> .
+<http://purl.org/iot/ontology/iot-stream#streamStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+# 
+# http://purl.org/ontology/bibo/doi
+<http://purl.org/ontology/bibo/doi> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/ontology/bibo/status
+<http://purl.org/ontology/bibo/status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann#preferredNamespaceUri
+<http://purl.org/vocab/vann#preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/contributor
+<http://schema.org/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/domainIncludes
+<http://schema.org/domainIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/rangeIncludes
+<http://schema.org/rangeIncludes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#alt
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 altitude of a SpatialThing (decimal meters \nabove the local reference ellipsoid)." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#label> "altitude" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#alt> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 latitude of a SpatialThing (decimal degrees)." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#label> "latitude" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#comment> "The WGS84 longitude of a SpatialThing (decimal degrees)." .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#label> "longitude" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#definition
+<http://www.w3.org/2004/02/skos/core#definition> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#example
+<http://www.w3.org/2004/02/skos/core#example> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasQuantityKind> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind> .
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#hasUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.oclc.org/NET/ssnx/qu/qu#Unit> .
+# 
+# http://purl.org/iot/ontology/iot-stream#analysedBy
+<http://purl.org/iot/ontology/iot-stream#analysedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/iot/ontology/iot-stream#analysedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+<http://purl.org/iot/ontology/iot-stream#analysedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/iot/ontology/iot-stream#Analytics> .
+<http://purl.org/iot/ontology/iot-stream#analysedBy> <http://www.w3.org/2000/01/rdf-schema#label> "analysed by"@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#belongsTo
+<http://purl.org/iot/ontology/iot-stream#belongsTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/iot/ontology/iot-stream#belongsTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#StreamObservation> .
+<http://purl.org/iot/ontology/iot-stream#belongsTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+<http://purl.org/iot/ontology/iot-stream#belongsTo> <http://www.w3.org/2000/01/rdf-schema#label> "belongs to"@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#derivedFrom
+<http://purl.org/iot/ontology/iot-stream#derivedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/iot/ontology/iot-stream#derivedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+<http://purl.org/iot/ontology/iot-stream#derivedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+<http://purl.org/iot/ontology/iot-stream#derivedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "derived from"@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#detectedFrom
+<http://purl.org/iot/ontology/iot-stream#detectedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/iot/ontology/iot-stream#detectedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#Event> .
+<http://purl.org/iot/ontology/iot-stream#detectedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+<http://purl.org/iot/ontology/iot-stream#detectedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "detected from"@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#generatedBy
+<http://purl.org/iot/ontology/iot-stream#generatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/iot/ontology/iot-stream#generatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#Event> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/iot/ontology/iot-stream#generatedBy> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/ns/sosa/Sensor> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#Analytics> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/iot/ontology/iot-stream#generatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "generated by"@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#madeStreamObservation
+<http://purl.org/iot/ontology/iot-stream#madeStreamObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/iot/ontology/iot-stream#madeStreamObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://purl.org/iot/ontology/iot-stream#madeStreamObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/iot/ontology/iot-stream#StreamObservation> .
+<http://purl.org/iot/ontology/iot-stream#madeStreamObservation> <http://www.w3.org/2000/01/rdf-schema#label> "made stream observation"@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#providedBy
+<http://purl.org/iot/ontology/iot-stream#providedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/iot/ontology/iot-stream#providedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+<http://purl.org/iot/ontology/iot-stream#providedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service> .
+<http://purl.org/iot/ontology/iot-stream#providedBy> <http://www.w3.org/2000/01/rdf-schema#label> "provided by"@en .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#location
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#IotStream> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#Point> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#comment> "The relation between something and the point, \n or other geometrical thing in space, where it is.  For example, the realtionship between\n a radio tower and a Point with a given lat and long.\n Or a relationship between a park and its outline as a closed arc of points, or a road and\n its location as a arc (a sequence of points).\n Clearly in practice there will be limit to the accuracy of any such statement, but one would expect\n an accuracy appropriate for the size of the object and uses such as mapping .\n " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#location> <http://www.w3.org/2000/01/rdf-schema#label> "location" .
+# 
+# http://www.w3.org/ns/sosa/madeBySensor
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.w3.org/ns/sosa/madeObservation> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between an Observation and the Sensor which made the Observation."@en .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2000/01/rdf-schema#label> "made by sensor"@en .
+<http://www.w3.org/ns/sosa/madeBySensor> <http://www.w3.org/2004/02/skos/core#definition> "Relation between an Observation and the Sensor which made the Observation."@en .
+# 
+# http://www.w3.org/ns/sosa/madeObservation
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/madeObservation> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sensor> .
+<http://www.w3.org/ns/sosa/madeObservation> <http://schema.org/rangeIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "Relation between a Sensor and an Observation made by the Sensor."@en .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2000/01/rdf-schema#label> "made observation"@en .
+<http://www.w3.org/ns/sosa/madeObservation> <http://www.w3.org/2004/02/skos/core#definition> "Relation between a Sensor and an Observation made by the Sensor."@en .
+# 
+# https://w3id.org/iot/qoi#hasQuality
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#StreamObservation> .
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/iot/qoi#Quality> .
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/2000/01/rdf-schema#comment> "Connects a quality to a data source."@en .
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/2000/01/rdf-schema#label> "hasQuality"@en .
+<https://w3id.org/iot/qoi#hasQuality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#endpoint> <http://www.w3.org/2000/01/rdf-schema#comment> "Endpoint of the service. It is usually a URL where the service is available." .
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceDescription> <http://www.w3.org/2000/01/rdf-schema#comment> "Interface Description of the service, e.g WADL, WSDL, NGSI9 etc." .
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#interfaceType> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the type of interface of the service endpoint, e.g. RESTful, NGSI-9, MQTT, CoAP etc."@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#label
+<http://purl.org/iot/ontology/iot-stream#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/iot/ontology/iot-stream#label> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#Event> .
+<http://purl.org/iot/ontology/iot-stream#label> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/iot/ontology/iot-stream#methods
+<http://purl.org/iot/ontology/iot-stream#methods> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/iot/ontology/iot-stream#methods> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#Analytics> .
+<http://purl.org/iot/ontology/iot-stream#methods> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/iot/ontology/iot-stream#paramValues
+<http://purl.org/iot/ontology/iot-stream#paramValues> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/iot/ontology/iot-stream#paramValues> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#Analytics> .
+<http://purl.org/iot/ontology/iot-stream#paramValues> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/iot/ontology/iot-stream#parameters
+<http://purl.org/iot/ontology/iot-stream#parameters> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/iot/ontology/iot-stream#parameters> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/iot/ontology/iot-stream#Analytics> .
+<http://purl.org/iot/ontology/iot-stream#parameters> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://purl.org/iot/ontology/iot-stream#windowEnd
+<http://purl.org/iot/ontology/iot-stream#windowEnd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/iot/ontology/iot-stream#windowEnd> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#StreamObservation> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#Event> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#Analytics> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://purl.org/iot/ontology/iot-stream#windowStart
+<http://purl.org/iot/ontology/iot-stream#windowStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/iot/ontology/iot-stream#windowStart> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#unionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#StreamObservation> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#Event> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://purl.org/iot/ontology/iot-stream#Analytics> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/hasSimpleResult
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#comment> "The simple value of an Observation or Actuation or act of Sampling."@en .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/2000/01/rdf-schema#label> "has simple result"@en .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/2004/02/skos/core#definition> "The simple value of an Observation or Actuation or act of Sampling."@en .
+<http://www.w3.org/ns/sosa/hasSimpleResult> <http://www.w3.org/2004/02/skos/core#example> "For instance, the values 23 or true."@en .
+# 
+# http://www.w3.org/ns/sosa/resultTime
+<http://www.w3.org/ns/sosa/resultTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.w3.org/ns/sosa/resultTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.w3.org/ns/sosa/resultTime> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Actuation> .
+<http://www.w3.org/ns/sosa/resultTime> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Observation> .
+<http://www.w3.org/ns/sosa/resultTime> <http://schema.org/domainIncludes> <http://www.w3.org/ns/sosa/Sampling> .
+<http://www.w3.org/ns/sosa/resultTime> <http://www.w3.org/2000/01/rdf-schema#comment> "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en .
+<http://www.w3.org/ns/sosa/resultTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/sosa/resultTime> <http://www.w3.org/2000/01/rdf-schema#label> "result time"@en .
+<http://www.w3.org/ns/sosa/resultTime> <http://www.w3.org/2004/02/skos/core#definition> "The result time is the instant of time when the Observation, Actuation or Sampling activity was completed."@en .
+# 
+# https://w3id.org/iot/qoi#hasAbsoluteValue
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topDataProperty> .
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/iot/qoi#Quality> .
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the absolute value for the measured quality. E.g. 60 for Age (unit is defined with hasUnitOfMeasurement)."@en .
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/2000/01/rdf-schema#label> "hasAbsoluteValue"@en .
+<https://w3id.org/iot/qoi#hasAbsoluteValue> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.oclc.org/NET/UNIS/fiware/iot-lite#Service> <http://www.w3.org/2000/01/rdf-schema#comment> "Service provided by an IoT Device"@en .
+# 
+# http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind
+<http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'QuantityKind' [SysML 1.2-QUDV] http://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv" .
+<http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind> <http://www.w3.org/2000/01/rdf-schema#comment> "A QuantityKind is an abstract classifier that represents the [VIM] concept of \"kind of quantity\" that is defined as \"aspect\ncommon to mutually comparable quantities.\" A QuantityKind represents the essence of a quantity without any numerical\nvalue or unit. Quantities of the same kind within a given system of quantities have the same quantity dimension. However,\nquantities of the same dimension are not necessarily of the same kind." .
+<http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/qu" .
+<http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind> <http://www.w3.org/2000/01/rdf-schema#label> "QuantityKind" .
+<http://purl.oclc.org/NET/ssnx/qu/qu#QuantityKind> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.omgsysml.org/qudv#Quantity" .
+# 
+# http://purl.oclc.org/NET/ssnx/qu/qu#Unit
+<http://purl.oclc.org/NET/ssnx/qu/qu#Unit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.oclc.org/NET/ssnx/qu/qu#Unit> <http://purl.org/dc/elements/1.1/source> "skos:exactMatch 'Unit' [SysML 1.2-QUDV] http://www.omgwiki.org/OMGSysML/doku.php?id=sysml-qudv:quantities_units_dimensions_values_qudv" .
+<http://purl.oclc.org/NET/ssnx/qu/qu#Unit> <http://www.w3.org/2000/01/rdf-schema#comment> "A Unit is an abstract classifier that represents the [VIM] concept of \"measurement unit\" that is defined as \"real scalar quantity,\ndefined and adopted by convention, with which any other quantity of the same kind can be compared to express the ratio of the\ntwo quantities as a number.\"" .
+<http://purl.oclc.org/NET/ssnx/qu/qu#Unit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.oclc.org/NET/ssnx/qu" .
+<http://purl.oclc.org/NET/ssnx/qu/qu#Unit> <http://www.w3.org/2000/01/rdf-schema#label> "Unit" .
+<http://purl.oclc.org/NET/ssnx/qu/qu#Unit> <http://www.w3.org/2000/01/rdf-schema#seeAlso> "http://www.omgsysml.org/qudv#Unit" .
+# 
+# http://purl.org/iot/ontology/iot-stream#Analytics
+<http://purl.org/iot/ontology/iot-stream#Analytics> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/iot/ontology/iot-stream#Analytics> <http://www.w3.org/2000/01/rdf-schema#comment> "The data analytics that has been applied to the IoT data stream."@en .
+<http://purl.org/iot/ontology/iot-stream#Analytics> <http://www.w3.org/2000/01/rdf-schema#label> "Analytics" .
+<http://purl.org/iot/ontology/iot-stream#Analytics> <http://www.w3.org/2004/02/skos/core#definition> "The data analytics that has been applied to the IoT data stream."@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#Event
+<http://purl.org/iot/ontology/iot-stream#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/iot/ontology/iot-stream#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "The event that has been detected from an IoT data steam, and generated by an analytics process"@en .
+<http://purl.org/iot/ontology/iot-stream#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event"@en .
+<http://purl.org/iot/ontology/iot-stream#Event> <http://www.w3.org/2004/02/skos/core#definition> "The event that has been detected from an IoT data steam, and generated by an analytics process"@en .
+# 
+# http://purl.org/iot/ontology/iot-stream#IotStream
+<http://purl.org/iot/ontology/iot-stream#IotStream> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/iot/ontology/iot-stream#IotStream> <http://purl.org/dc/elements/1.1/description> "An abstraction that represents an IoT data stream that is generated by an IoT source. The IoTStream is the central concept in the ontology, whereby continuous stream observations belong to. It has a lifetime whch is defined by the stream start time and end time."@en .
+<http://purl.org/iot/ontology/iot-stream#IotStream> <http://www.w3.org/2000/01/rdf-schema#label> "IotStream" .
+# 
+# http://purl.org/iot/ontology/iot-stream#StreamObservation
+<http://purl.org/iot/ontology/iot-stream#StreamObservation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/iot/ontology/iot-stream#StreamObservation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/sosa/Observation> .
+<http://purl.org/iot/ontology/iot-stream#StreamObservation> <http://www.w3.org/2000/01/rdf-schema#comment> "A observation made by a sensor device captured as a data point over a time instant, or as a subset of data points over a defined time interval."@en .
+<http://purl.org/iot/ontology/iot-stream#StreamObservation> <http://www.w3.org/2000/01/rdf-schema#label> "StreamObservation" .
+<http://purl.org/iot/ontology/iot-stream#StreamObservation> <http://www.w3.org/2004/02/skos/core#definition> "A observation made by a sensor device captured as a data point over a time instant, or as a subset of data points over a defined time interval."@en .
+# 
+# http://www.opengis.net/ont/geosparql#Coverage
+<http://www.opengis.net/ont/geosparql#Coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#Coverage> <http://www.w3.org/2000/01/rdf-schema#label> "Coverage" .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#Point
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> " \nUniquely identified by lat/long/alt. i.e.\n\nspaciallyIntersects(P1, P2) :- lat(P1, LAT), long(P1, LONG), alt(P1, ALT),\n  lat(P2, LAT), long(P2, LONG), alt(P2, ALT).\n\nsameThing(P1, P2) :- type(P1, Point), type(P2, Point), spaciallyIntersects(P1, P2).\n  " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#comment> "A point, typically described using a coordinate system relative to Earth, such as WGS84.\n  " .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "geo:Point" .
+<http://www.w3.org/2003/01/geo/wgs84_pos#Point> <http://www.w3.org/2000/01/rdf-schema#label> "point" .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/sosa/Observation
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#comment> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."@en .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2000/01/rdf-schema#label> "Observation"@en .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2004/02/skos/core#definition> "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."@en .
+<http://www.w3.org/ns/sosa/Observation> <http://www.w3.org/2004/02/skos/core#example> "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake."@en .
+# 
+# http://www.w3.org/ns/sosa/Platform
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#comment> "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2000/01/rdf-schema#label> "Platform"@en .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2004/02/skos/core#definition> "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."@en .
+<http://www.w3.org/ns/sosa/Platform> <http://www.w3.org/2004/02/skos/core#example> "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."@en .
+# 
+# http://www.w3.org/ns/sosa/Sensor
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#comment> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/sosa/> .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2000/01/rdf-schema#label> "Sensor"@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2004/02/skos/core#definition> "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."@en .
+<http://www.w3.org/ns/sosa/Sensor> <http://www.w3.org/2004/02/skos/core#example> "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."@en .
+# 
+# https://w3id.org/iot/qoi#Age
+<https://w3id.org/iot/qoi#Age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Age> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/iot/qoi#Timeliness> .
+<https://w3id.org/iot/qoi#Age> <http://www.w3.org/2002/07/owl#disjointWith> <https://w3id.org/iot/qoi#Frequency> .
+<https://w3id.org/iot/qoi#Age> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the age of provided information."@en .
+<https://w3id.org/iot/qoi#Age> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Age> <http://www.w3.org/2000/01/rdf-schema#label> "Age"@en .
+<https://w3id.org/iot/qoi#Age> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# https://w3id.org/iot/qoi#Artificiality
+<https://w3id.org/iot/qoi#Artificiality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Artificiality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/iot/qoi#Quality> .
+<https://w3id.org/iot/qoi#Artificiality> <http://www.w3.org/2000/01/rdf-schema#comment> "The degreee of used sensor fusion techniques or definition of a direct measurement from a single data source."@en .
+<https://w3id.org/iot/qoi#Artificiality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Artificiality> <http://www.w3.org/2000/01/rdf-schema#label> "Artificiality"@en .
+<https://w3id.org/iot/qoi#Artificiality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+# 
+# https://w3id.org/iot/qoi#Completeness
+<https://w3id.org/iot/qoi#Completeness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Completeness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/iot/qoi#Quality> .
+<https://w3id.org/iot/qoi#Completeness> <http://www.w3.org/2000/01/rdf-schema#comment> "The degreee of of completeness of all expected attributes/values within a single provided date value."@en .
+<https://w3id.org/iot/qoi#Completeness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Completeness> <http://www.w3.org/2000/01/rdf-schema#label> "Completeness"@en .
+<https://w3id.org/iot/qoi#Completeness> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# https://w3id.org/iot/qoi#Concordance
+<https://w3id.org/iot/qoi#Concordance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Concordance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/iot/qoi#Quality> .
+<https://w3id.org/iot/qoi#Concordance> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the agreement between information provided by the monitored data source and information provided by other independent data sources providing correlating effects."@en .
+<https://w3id.org/iot/qoi#Concordance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Concordance> <http://www.w3.org/2000/01/rdf-schema#label> "Concordance"@en .
+<https://w3id.org/iot/qoi#Concordance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "testing"@en .
+# 
+# https://w3id.org/iot/qoi#Frequency
+<https://w3id.org/iot/qoi#Frequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Frequency> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/iot/qoi#Timeliness> .
+<https://w3id.org/iot/qoi#Frequency> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines the frequency in which information is updated."@en .
+<https://w3id.org/iot/qoi#Frequency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Frequency> <http://www.w3.org/2000/01/rdf-schema#label> "Frequency"@en .
+<https://w3id.org/iot/qoi#Frequency> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# https://w3id.org/iot/qoi#Plausibility
+<https://w3id.org/iot/qoi#Plausibility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Plausibility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/iot/qoi#Quality> .
+<https://w3id.org/iot/qoi#Plausibility> <http://www.w3.org/2000/01/rdf-schema#comment> "Defines if data provided by a data sources makes sense regarding all the probabilistic knowledge about the data source. E.g. for a temperature sensore the temperature is within a certain value range."@en .
+<https://w3id.org/iot/qoi#Plausibility> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Plausibility> <http://www.w3.org/2000/01/rdf-schema#label> "Plausibility"@en .
+<https://w3id.org/iot/qoi#Plausibility> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# https://w3id.org/iot/qoi#Quality
+<https://w3id.org/iot/qoi#Quality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Quality> <http://www.w3.org/2000/01/rdf-schema#comment> "Top class for quality describing classes for IoT data sources." .
+<https://w3id.org/iot/qoi#Quality> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Quality> <http://www.w3.org/2000/01/rdf-schema#label> "Quality" .
+<https://w3id.org/iot/qoi#Quality> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# https://w3id.org/iot/qoi#Timeliness
+<https://w3id.org/iot/qoi#Timeliness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/iot/qoi#Timeliness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://w3id.org/iot/qoi#Quality> .
+<https://w3id.org/iot/qoi#Timeliness> <http://www.w3.org/2000/01/rdf-schema#comment> "Timliness defines a category with metrics, which rate if a data source provides data within a defined timespan or of a defined age."@en .
+<https://w3id.org/iot/qoi#Timeliness> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://w3id.org/iot/qoi> .
+<https://w3id.org/iot/qoi#Timeliness> <http://www.w3.org/2000/01/rdf-schema#label> "Timeliness"@en .
+<https://w3id.org/iot/qoi#Timeliness> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid15 <http://www.w3.org/2002/07/owl#members> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/iot/qoi#Timeliness> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/iot/qoi#Plausibility> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/iot/qoi#Concordance> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/iot/qoi#Completeness> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://w3id.org/iot/qoi#Artificiality> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
