@@ -18,3 +18,23 @@ A lightweight semantic model for the annotation of stream data, IoT-Stream, that
 
 ## Namespaces
 - ```iot-stream```: ``` http://purl.org/iot/ontology/iot-stream ```
+- ```schema```:	```<http://schema.org>```
+- ``iot-lite```:	```<http://purl.oclc.org/NET/UNIS/fiware/iot-lite>```
+- ```qu```:	```<http://purl.oclc.org/NET/ssnx/qu/qu>```
+- ```sosa```:	```<http://www.w3.org/ns/sosa>```
+- ```ns```:	```<http://www.w3.org/2003/06/sw-vocab-status/ns>```
+- ```owl```:	```<http://www.w3.org/2002/07/owl>```
+- ```xsd```:	```<http://www.w3.org/2001/XMLSchema>```
+- ```skos```:	```<http://www.w3.org/2004/02/skos/core>```
+- ```qoi```:	```<https://w3id.org/iot/qoi>```
+- ```rdfs```:	```<http://www.w3.org/2000/01/rdf-schema>```
+- ```geosparql```:	```<http://www.opengis.net/ont/geosparql>```
+- ```rdf```:	```<http://www.w3.org/1999/02/22-rdf-syntax-ns>```
+- ```terms```:	```<http://purl.org/dc/terms>```
+- ```bibo```:	```<http://purl.org/ontology/bibo>```
+- ```wgs84_pos```:	```<http://www.w3.org/2003/01/geo/wgs84_pos>```
+- ```vann```:	```<http://purl.org/vocab/vann>```
+- ```dc```:	```<http://purl.org/dc/elements/1.1>```
+
+## Funding
+This work has been funded by the EU Horizon 2020 Research and Innovation programme, through projects IoTCrawler (contract no. 779852) and ACTIVAGE (contract no. 732679).
