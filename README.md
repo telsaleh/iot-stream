@@ -21,7 +21,7 @@ A lightweight semantic model for the annotation of stream data, IoT-Stream, that
 ## Namespaces
 - ```iot-stream```: ``` http://purl.org/iot/ontology/iot-stream ```
 - ```schema```:	```<http://schema.org>```
-- ``iot-lite```:	```<http://purl.oclc.org/NET/UNIS/fiware/iot-lite>```
+- ```iot-lite```:	```<http://purl.oclc.org/NET/UNIS/fiware/iot-lite>```
 - ```qu```:	```<http://purl.oclc.org/NET/ssnx/qu/qu>```
 - ```sosa```:	```<http://www.w3.org/ns/sosa>```
 - ```ns```:	```<http://www.w3.org/2003/06/sw-vocab-status/ns>```
