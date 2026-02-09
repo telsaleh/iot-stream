@@ -42,5 +42,10 @@ The processed data is also kept lightweight. For example, raw data coming from a
 - ```vann```:	```<http://purl.org/vocab/vann>```
 - ```dc```:	```<http://purl.org/dc/elements/1.1>```
 
+## Taxonomies
+- [Sensors in Sustainable Smart Cities](https://doi.org/10.3390/su15086594) (2023)
+  - Domain: Smart Cities
+  - Authors: Santos , Rodrigo, Gabriel Eggly, Julián Gutierrez, and Carlos I. Chesñevar
+
 ## Funding
 This work has been funded by the EU Horizon 2020 Research and Innovation programme, through projects IoTCrawler (contract no. 779852) and ACTIVAGE (contract no. 732679).
