@@ -19,8 +19,8 @@ The processed data is also kept lightweight. For example, raw data coming from a
 
 ## Publications:
 
-- Elsaleh, T.; Enshaeifar, S.; Rezvani, R.; Acton, S.T.; Janeiko, V.; Bermudez-Edo, M. IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams and Its Use with Data Analytics and Event Detection Services. Sensors 2020, 20, 953. https://doi.org/10.3390/s20040953.
-- T. Elsaleh, M. Bermudez-Edo, S. Enshaeifar, S. T. Acton, R. Rezvani and P. Barnaghi, "IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams," 2019 Global IoT Summit (GIoTS), Aarhus, Denmark, 2019, pp. 1-6, doi: 10.1109/GIOTS.2019.8766367.
+- Elsaleh, T.; Enshaeifar, S.; Rezvani, R.; Acton, S.T.; Janeiko, V.; Bermudez-Edo, M. IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams and Its Use with Data Analytics and Event Detection Services. Sensors 2020, 20, 953. [(DOI)](https://doi.org/10.3390/s20040953)
+- T. Elsaleh, M. Bermudez-Edo, S. Enshaeifar, S. T. Acton, R. Rezvani and P. Barnaghi, "IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams," 2019 Global IoT Summit (GIoTS), Aarhus, Denmark, 2019, pp. 1-6. [(DOI)](10.1109/GIOTS.2019.8766367)
 
 ## Namespaces
 - ```iot-stream```: ``` http://purl.org/iot/ontology/iot-stream ```
