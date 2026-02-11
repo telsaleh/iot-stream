@@ -17,11 +17,6 @@ In our proposal we have centred the attention around the stream data. To keep it
 
 The processed data is also kept lightweight. For example, raw data coming from a sensor that it is produced every minute can be individually annotated. However, if such fine granularity is not needed, data can be aggregated in windows of 5 minutes using data mining algorithms, such as SAX (Symbolic Aggregate Approximation), and annotate the processed stream data. These aggregated stream annotations are still lightweight, with only the annotations of the aggregated value and the start/end times of the aggregated value. Metadata for searching purposes is also appended, such as algorithm used, values of the parameters of the algorithm, etc., outside of the stream observations.
 
-## Publications:
-
-- Elsaleh, T.; Enshaeifar, S.; Rezvani, R.; Acton, S.T.; Janeiko, V.; Bermudez-Edo, M. IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams and Its Use with Data Analytics and Event Detection Services. Sensors 2020, 20, 953. [(DOI)](https://doi.org/10.3390/s20040953)
-- T. Elsaleh, M. Bermudez-Edo, S. Enshaeifar, S. T. Acton, R. Rezvani and P. Barnaghi, "IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams," 2019 Global IoT Summit (GIoTS), Aarhus, Denmark, 2019, pp. 1-6. [(DOI)](https://doi.org/10.1109/GIOTS.2019.8766367)
-
 ## Namespaces
 - ```iot-stream```: ``` http://purl.org/iot/ontology/iot-stream ```
 - ```schema```:	```<http://schema.org>```
@@ -41,6 +36,11 @@ The processed data is also kept lightweight. For example, raw data coming from a
 - ```wgs84_pos```:	```<http://www.w3.org/2003/01/geo/wgs84_pos>```
 - ```vann```:	```<http://purl.org/vocab/vann>```
 - ```dc```:	```<http://purl.org/dc/elements/1.1>```
+
+## Publications:
+
+- Elsaleh, T.; Enshaeifar, S.; Rezvani, R.; Acton, S.T.; Janeiko, V.; Bermudez-Edo, M. IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams and Its Use with Data Analytics and Event Detection Services. Sensors 2020, 20, 953. [(DOI)](https://doi.org/10.3390/s20040953)
+- T. Elsaleh, M. Bermudez-Edo, S. Enshaeifar, S. T. Acton, R. Rezvani and P. Barnaghi, "IoT-Stream: A Lightweight Ontology for Internet of Things Data Streams," 2019 Global IoT Summit (GIoTS), Aarhus, Denmark, 2019, pp. 1-6. [(DOI)](https://doi.org/10.1109/GIOTS.2019.8766367)
 
 ## Taxonomies
 - [Sensors in Sustainable Smart Cities](https://doi.org/10.3390/su15086594) (2023)
